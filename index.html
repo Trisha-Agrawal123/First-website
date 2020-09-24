@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Basics</title>
+	<!--linking to the font-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<!-- linking to the CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		form{
+			margin-left: 70px; 
+		}
+
+.column {
+  float:left;
+  background-color: black;
+  width: 600px;
+  border: 10px solid grey;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>		
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Login/Signup</a>
+				</li>
+				<li>
+					<a href="#">AboutUs</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+                    <input type="text" placeholder="Search.." name="search"><a href="#">OK</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<article>
+    	<hr>
+    	<div class="row">
+        <div class="column">
+        <h3><center>About the website</center></h3>
+        <img src="https://maroofraza.com/wp-content/uploads/2020/05/Times-of-valour.jpg">
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p></div>
+    	<div class="column">
+    	    <h3><center>LOGIN/SIGNUP FORM</center></h3> 
+    	        <form action="/action_page.php">
+                  <label for="fname">Full name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John Doe"><br>
+                  <label for="Email">Email:</label><br>
+                  <input type="text" id="Email" name="Email" value="John123@"><br> 
+                  <label for="Password">PASSWORD:</label><br>
+                  <input type="text" id="Password" name="Password" value="......"><br><br>
+                  <input type="submit" value="SIGNUP">
+                  <p>If you are already one <a href="#">Login</a> here.</p> 
+                  <img src="https://www.scrolldroll.com/wp-content/uploads/2020/03/Indian-Army-Quotes-Featured.jpg" >
+                </form> 
+                </div>
+            </article>
+            <article>	
+            	<hr>
+            	<h4>AboutUs</h4>
+            	<h5>Name: John <br> Position:xxx</h5>
+            	<img src="https://jvmnegociosimobiliarios.com.br/assets/img/avatar/default.png" alt="Avatar" style="width:100px"></p>
+            </article> 
+            <article>
+            	<hr>
+            	<h4>Contact</h4>
+            	<label for="Email">Email:</label>
+                  <input type="text" id="Email" name="Email" value="John123@"><br> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>    	            
+	</section>
+	<hr>
+	<footer>
+		<p>Copyright &copy; Tales of Valour All Rights Reserved.</p>
+		<p>Made with &hearts; in India </p>
+	</footer>
+    
+</body>
+</html>
